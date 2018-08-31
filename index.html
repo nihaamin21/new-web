@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App </title>
+    <link rel="icon" type="image/png" href="weather-icon-png-2.png">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <nav id="heading">
+            Weather Forecast
+            <i class="wi wi-cloudy"></i>
+        </nav>
+        <div class="background">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search City" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" onclick="searchCity()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="city-info">
+                    <h3 class="city">
+                    
+                    </h3>
+                    <p class="weather">
+                       
+                    </p>
+                    <div class="temp-detail">
+                        <h1 class="temp">
+                            
+                        </h1>
+                    </div>
+                </div>
+                <div class="current-date-month">
+                    <h5 class="current-month"> </h5>
+                    <span class="current-date"></span>
+                </div>
+            </div>
+            <div class="main-div">
+                <div id="div-1" class="main-card">
+                    <h4 class="card-day-1">
+                        
+                    </h4>
+                    <h4 class="card-icon-1"></h4>
+                    <div class="temp-div">
+                        <h5 class="card-temp-1">
+                            
+                        </h5>
+                    </div>
+                </div>
+                <div id="div-2" class="main-card">
+                    <h4 class="card-day-2">
+                        
+                    </h4>
+                    <h4 class="card-icon-2"></h4>
+                    <div class="temp-div">
+                        <h5 class="card-temp-2">
+                            
+                        </h5>
+                    </div>
+                </div>
+                <div id="div-3" class="main-card">
+                    <h4 class="card-day-3">
+                        
+                    </h4>
+                    <h4 class="card-icon-3"></h4>
+                    <div class="temp-div">
+                        <h5 class="card-temp-3">
+                            
+                        </h5>
+                    </div>
+                </div>
+                <div id="div-4" class="main-card">
+                    <h4 class="card-day-4">
+                        
+                    </h4>
+                    <h4 class="card-icon-4"></h4>
+                    <div class="temp-div">
+                        <h5 class="card-temp-4">
+                            
+                        </h5>
+                    </div>
+                </div>
+                <div id="div-5" class="main-card">
+                    <h4 class="card-day-5">
+                        
+                    </h4>
+                    <h4 class="card-icon-5"></h4>
+                    <div class="temp-div">
+                        <h5 class="card-temp-5">
+                            
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
