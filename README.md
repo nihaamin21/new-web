@@ -1,6 +1,6 @@
 # weather
 
-You can see website here : https://nihaamin21.github.io/weather/.
+You can see website here : https://nihaamin21.github.io/new-web/
 
 
 Uses the Open Weather Map API to request weather data.
