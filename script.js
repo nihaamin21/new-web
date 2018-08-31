@@ -72,7 +72,7 @@ function searchCity(){
   
         // day1
   
-        let forecasteIconD1 = data.list[0].weather[0].id;
+        let forecasteIconD1 = data.list[0].weather[0].main;
 
       if (forecasteIconD1 == "Clear") {
         document.querySelector(".card-icon-1").innerHTML = `<i class="wi wi-day-sunny"></i>`
