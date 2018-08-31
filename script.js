@@ -1,8 +1,16 @@
+function initialized(){
+  $(".form-control").keyup(function (event){
+    if (event.keyCode === 13) {
+      $(".btn").click();
+    }
+});
+  searchCity();
+}
 function searchCity(){
     let city=document.querySelector(".form-control").value;
     $.ajax({
   
-      url :`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c63b5fe74e0b24e582cb2cb100efd74d&units=metric`,
+      url :`https://api.openweathermap.org/data/2.5/weather?q=${city ? city :"Karachi"}&appid=c63b5fe74e0b24e582cb2cb100efd74d&units=metric`,
       success: function(data){
       
   
